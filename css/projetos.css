@@ -199,7 +199,7 @@
 .card2 {
     display: flex;
     flex-direction: column-reverse;
-    background-image: url('../projetos/projeto2.JPG');
+    background-image: url('../projetos/projeto2.png');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;

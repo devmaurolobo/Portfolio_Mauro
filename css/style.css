@@ -101,7 +101,7 @@
 .caixa-principal {
     display: flex;
     height: 100vh;                                                                           
-    background: url(../img/fundo.jpg);
+    background: url(../img/black.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
