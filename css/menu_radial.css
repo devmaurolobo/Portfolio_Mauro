@@ -1,0 +1,92 @@
+.container {
+    position: relative;
+}
+
+.stack {
+display:block;
+width: 280px;
+height: 280px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+
+.icon  {
+position: absolute;
+left: 0;
+list-style: none;
+transition-delay: calc(1s * var(--i));
+transition: 1s;
+transform-origin: 140px;
+transform: rotate(0deg) translateX(110px);
+
+}
+
+.stack.active .icon{
+transform: rotate(calc(360deg / 8* var(--i))) translateX(0px);
+
+}
+
+
+.invisible {
+    display: none;
+
+}
+
+.stack .icon { 
+position: absolute;
+top:100px;
+left:0px;
+justify-content: center;
+align-items: center;
+width: 60px;
+height: 60px;
+color:var(--clr);
+border: 2px solid rgb(255, 255, 255);
+border-radius: 50%;
+transition: 2s;
+}
+
+.icon.dark-mode  {
+    border: 2px solid black;
+}
+
+.stack.active .icon:hover  {
+background: var(--clr);
+box-shadow: 0 0px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+translate: 360deg translate;
+}
+
+.stack.active .icon:hover::after {
+translate: 360deg translate;
+}
+
+.toggle {
+position: absolute; /* Alterado para absolute */
+width: 140px;
+height: 70px;
+background: rgb(199, 182, 182);
+border: 5px solid #0c0909;
+border-radius: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;    
+font-size: 2em;
+list-style: none;
+z-index: 100;
+top:100px;
+left: 70px;
+}
+
+.stack.active .toggle {
+transform: rotate(360deg) ;
+transition: 1s;
+}
+
+.skill{
+    position: relative;
+}

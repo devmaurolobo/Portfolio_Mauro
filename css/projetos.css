@@ -1,0 +1,639 @@
+.projetos {
+    background:  #262626;
+    width: 100%;
+    height: 150vh;
+    justify-content: center;
+}
+
+.projetos h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.projetos.dark-mode h2 {
+
+    color: black;
+}
+
+.link {
+    background-color: red;
+    color: white;
+    padding:  10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    align-items: center;
+    width: 120px;
+    margin-bottom: 10px;
+    text-decoration:none;
+}
+
+
+.cards-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    height: 130vh;
+}
+
+.proj1 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 40px 38px 28px -4px black;
+    margin-bottom: 60px;
+}
+
+.proj1.dark-mode {
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn{
+    color: black;
+    font-size: 20px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    position: relative;
+    width: 100%;
+    opacity: 0.9;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.inf1{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    width: 99%;
+    opacity: 0.9;
+    height: 35px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('Projeto1.JPG');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 398px;
+    height: 250px;
+    border-radius: 00px 00px 20px 20px;
+    margin-bottom: 3px;
+}
+
+.card1.dark-mode  {
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+.proj1:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+
+.cartao1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color:white;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+}
+
+
+
+.cartao1.dark-mode {
+    background:#f5f8f8;;
+    color: black;
+}
+
+-----
+
+
+.proj2:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+
+.cartao2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color:white;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+}
+
+.cartao2.dark-mode {
+    background:#f5f8f8;;
+    color: black;
+}
+
+
+.proj2 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 40px 38px 28px -4px black;
+    margin-bottom: 60px;
+}
+
+.proj2.dark-mode {
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.proj2:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+.inf2{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    width: 99.5%;
+    opacity: 0.9;
+    height: 35px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card2 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('./projetos/projeto2.JPG');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 398px;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 3px;
+}
+
+.card2.dark-mode  {
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+-------
+
+.proj3:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+
+.cartao3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color:white;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+}
+
+.cartao3.dark-mode {
+    background:#f5f8f8;;
+    color: black;
+}
+
+
+.proj3 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 40px 38px 28px -4px black;
+    margin-bottom: 60px;
+}
+
+.proj3.dark-mode {
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.proj3:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+.inf3{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    width: 99.5%;
+    opacity: 0.9;
+    height: 35px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card3 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('./projetos/projeto3.JPG');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 398px;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 3px;
+}
+
+.card3.dark-mode  {
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+----
+.proj4:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+
+.cartao4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color:white;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+}
+
+.cartao4.dark-mode {
+    background:#f5f8f8;;
+    color: black;
+}
+
+
+.proj4 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 40px 38px 28px -4px black;
+    margin-bottom: 60px;
+}
+
+.proj4.dark-mode {
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.proj4:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+.inf4{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    width: 99.5%;
+    opacity: 0.9;
+    height: 35px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card4 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('./projetos/projeto4.JPG');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 398px;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 3px;
+}
+
+.card4.dark-mode  {
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+-------
+.proj5:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+
+.cartao5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color:white;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+}
+
+.cartao5.dark-mode {
+    background:#f5f8f8;;
+    color: black;
+}
+
+
+.proj5 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 40px 38px 28px -4px black;
+    margin-bottom: 60px;
+}
+
+.proj5.dark-mode {
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.proj5:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+.inf5{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    width: 99%;
+    opacity: 0.9;
+    height: 35px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card5 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('./projetos/projeto5.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 398px;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 3px;
+}
+
+.card5.dark-mode  {
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+---
+.proj6:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+
+.cartao6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    color:white;
+    overflow: hidden;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+}
+
+.cartao6.dark-mode {
+    background:#f5f8f8;;
+    color: black;
+}
+
+
+.proj6 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 40px 38px 28px -4px black;
+    margin-bottom: 60px;
+}
+
+.proj6.dark-mode {
+    background: radial-gradient(circle, rgba(83,81,81,1) 0%, rgba(0,0,0,1) 100%);
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.proj6:hover{
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+.inf6{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(216, 214, 214);
+    outline: none;
+    border: 2px solid rgb(245, 243, 243);
+    width: 99%;
+    opacity: 0.9;
+    height: 35px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card6 {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('./projetos/projeto6.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 398px;
+    height: 250px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 3px;
+}
+
+.card6.dark-mode  {
+    background:#f5f8f8;;
+    color: black;
+    border: 2px solid black;
+}
+.visible  {
+    max-height: 500px;
+    opacity: 1;
+}
+
+/*media query*/
+@media (max-width: 768px){
+
+    .projetos {  
+        height: 350vh;
+    }
+
+    .cards-projetos{
+        height: 330vh;
+    }
+
+    .proj1 {
+
+    width: 300px;
+}
+
+    .inf1{
+        width: 299px;
+}
+
+    .card1 { 
+        width: 298px;
+}
+
+    .proj2 {
+
+        width: 300px;
+}
+
+    .inf2{
+        width: 299px;
+}
+
+    .card2 { 
+        width: 298px;
+}
+
+.proj3 {
+
+    width: 300px;
+}
+
+.inf3 { 
+    width: 299px;
+}
+
+.card3 { 
+    width: 298px;
+}
+
+.proj4 {
+
+    width: 300px;
+}
+
+.inf4{
+    width: 299px;
+}
+
+.card4 { 
+    width: 298px;
+}
+
+.proj5 {
+
+    width: 300px;
+}
+
+.inf5 {
+    width: 299px;
+}
+
+.card5 { 
+    width: 298px;
+}
+
+.proj6 {
+
+    width: 300px;
+}
+
+.inf6 {
+    width: 299px;
+}
+
+.card6 { 
+    width: 298px;
+}
+}

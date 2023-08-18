@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu_radial.css">
+    <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/blacklight.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family= Josefin+Sans:wght@500 & family display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/f888f8161c.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Mauro Cesar</title>
+</head>
+
+
+<body>
+    
+    <div class = "superior">
+        <div class="black_light" >
+        
+            <div class="black_light_btn" onclick="color">  <i class="fa-solid fa-moon fa-flip" style="color: #030303;" id="black"></i>
+            <i class="fa-solid fa-sun fa-spin" style="color: #ffe32e;" id="sun"></i> 
+                
+            </div>
+        </div>
+        <h2 class="portfolio" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Port<spam>folio</spam></h2>
+        <nav class = "menu"></nav>
+            <ul id="menu-list" >
+                <li><a class="link-menu" href="#home">Home</a></li>
+                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
+                <li><a class="link-menu" href="#fale comigo">Contato</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars fa-spin fa-spin-reverse"  id = "menu-icon" onclick="showMenu()"></i>
+    </div>
+
+    <section class="caixa-principal" id="home">
+        
+        <div class= "nome"data-aos="fade-right" data-aos-duration="3000">
+                    <h1>Mauro <spam>Cesar</spam></h1>
+                    <div class = "cargo">
+                        <div class = "estatico" >Programador </div>
+                        <ul class = "dinamico">
+                            <li><span> JavaScript </span></li>
+                            <li><span> Python</span></li>
+                            <li><span> Front End </span></li>
+                            <li><span> Back End </span></li>
+                            <li><span> Full Stack </span></li>
+                            <li><span> Freelancer </span></li>
+                        </ul>
+                    </div>
+                    <img class = "foto" src = "./iMauro.png">
+        </div>
+        <div class="sobre-mim" data-aos="fade-left" data-aos-duration="3000">
+                <button id="acordion-header" onclick="expandir()">Sobre mim</button>
+                <div id="acordion-text" class ="acorde" >Sou um desenvolvedor freelancer experiente em programação Python e JavaScript,
+                    especializado em criar soluções front-end usando frameworks e bibliotecas de ponta, como Node.JS e React.JS. Estou procurando por uma oportunidade 
+                    emocionante em uma empresa de desenvolvimento de software ou financeira que valorize a excelência e a inovação. Minha paixão pela programação me permite criar soluções personalizadas e inovadoras para atender às necessidades específicas de cada cliente. Com meu compromisso com a excelência e a entrega de projetos de alta qualidade, estou confiante de que posso ajudar sua empresa a alcançar seus objetivos de negócios e levar sua presença online para o próximo nível. Vamos trabalhar juntos para criar 
+                    soluções web excepcionais que impressionem seus clientes e aumentem a satisfação do usuário!
+                    <div class = "botoes" >   
+                        <a class="contato" href= "https://wa.me/5519994149901?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank" >Entre em contato</a>
+                        <a class="baixar" href="./doc/CV_Mauro_14.08.pdf" target="_blank" downLoad="baixar" >Baixar CV</a>       
+                    </div>
+                </div>
+        </div>
+        <div class="skill" >
+                <ul class="stack" id="box" data-aos="fade-left" data-aos-duration="3000">
+                            <div class="toggle" id= "desc"><ion-icon name="code-slash-outline"></ion-icon id="desc"> Skill's</div> 
+                            <li style="--i:0;--clr:#ff2972;" ><a href="#"><ion-icon name="logo-html5" 
+                                class="icon" onmouseenter="html5()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                            <li style="--i:1;--clr:#2937ff;" ><a href="#"><ion-icon name="logo-react" 
+                                class="icon" onmouseenter="React()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                            <li style="--i:2;--clr:#eaff29;" ><a href="#"><ion-icon name="logo-css3" 
+                                class="icon" onmouseenter="Css3()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                            <li style="--i:3;--clr:#29ff29;" ><a href="#"><ion-icon name="logo-python"
+                                class="icon" onmouseenter="Python()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                            <li style="--i:4;--clr:#ff6d29;" ><a href="#"><ion-icon name="logo-bitcoin" 
+                                class="icon" onmouseenter="Solidity()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                            <li style="--i:5;--clr:#9f29ff;" ><a href="#"><ion-icon name="logo-javascript" 
+                                class="icon" onmouseenter="JS()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                            <li style="--i:6;--clr:#29ffe2;" ><a href="#"><ion-icon name="logo-github"
+                                class="icon" onmouseenter="Git_Hub()" onmouseleave="resetDesc()"></ion-icon></i></a></li>
+                            <li style="--i:7;--clr:#ff2972;"><a href="#"><ion-icon name="logo-angular" 
+                                class="icon" onmouseenter="Angular()" onmouseleave="resetDesc()"></ion-icon></a></li>
+                </ul>
+        </div>
+    </section>
+
+    <div class = "projetos" id = "projetos-id">
+        <h2> Projetos</h2>
+
+        <div class="cards-projetos">
+            <div class= "proj1" data-aos="fade-down-right"data-aos-duration="2000">
+                <div class = "inf1">Pagina Venda</div>
+                <div class = "card1" ><button class="btn" onclick="exibir1()">Ver Mais</div>
+                
+                <div class="cartao1" id = "cardtxt1" >Este é um projeto de aplicação web que utiliza HTML, CSS,JavaScript e a ferramenta Qmery para criar animações personalizadas,tornando a interface mais atraente e interativa. Com um design totalmente 
+                    responsivo, a aplicação é acessível em qualquer dispositivo, mantendo a 
+                    usabilidade excelente e consistente. O resultado é uma interface moderna e funcional, 
+                    com desempenho rápido e eficiente, pronta para conquistar seus usuários! 
+                    <br>  
+                    <br>              
+                    <a class="link" href = "https://mauro2040.github.io/projeto-anima-o/" class="project1" target="_blank" >Ver Projeto</a>
+                </div>   
+            </div>
+
+            <div class= "proj2" data-aos="fade-down-right"data-aos-duration="2000">
+                <div class = "inf2">Automação com RPA</div>
+                <div class = "card2" ><button class="btn" onclick="exibir2()">Ver Mais</div>
+                
+                <div class="cartao2" id = "cardtxt2" >Este projeto em Python utiliza a plataforma Botcity RPA para enviar mensagens pelo WhatsApp,
+                    automatizando processos e aumentando a eficiência dos negócios. Com sua habilidade em Python e 
+                    uso do Botcity RPA, é possível criar um robô para enviar mensagens em poucos cliques, otimizando o 
+                    tempo e permitindo que você se concentre em tarefas mais importantes.
+                    <br>  
+                    <br>  
+                    <br>                                
+                    <a class="link" href = "https://mauro2040.github.io/projeto-anima-o/" class="project1" target="_blank" >Ver Projeto</a>
+                </div>   
+            </div>  
+
+            <div class= "proj3" data-aos="fade-down-left"data-aos-duration="2000">
+                <div class = "inf3">Web Scrapping</div>
+                <div class = "card3" ><button class="btn" onclick="exibir3()">Ver Mais</div>
+                
+                <div class="cartao3" id = "cardtxt3" >Este é um programa Python excepcional que demonstra habilidades 
+                    avançadas em automação web com o uso do Selenium para coletar informações em uma página da web e, 
+                    em seguida, processar e enviar os dados obtidos via WhatsApp. O programa exibe conhecimentos sólidos
+                    em técnicas de scrapping, manipulação de dados e comunicação por API. Como um modelo de linguagem 
+                    altamente sofisticado.
+                    <br>  
+                    <br>              
+                    <a class="link" href = "https://github.com/mauro2040/Jupyter-Prograns/tree/main/webscraping/" class="project1" target="_blank" >Ver Projeto</a>
+                </div>   
+            </div>  
+    
+            <div class= "proj4" data-aos="fade-down-left"data-aos-duration="2000">
+                <div class = "inf4">Previsão Tempo</div>
+                <div class = "card4" ><button class="btn" onclick="exibir4()">Ver Mais</div>
+                
+                <div class="cartao4" id = "cardtxt4" >Conheça um projeto de aplicação web inovador que utiliza HTML, 
+                    CSS e JavaScript para fornecer informações meteorológicas precisas sobre uma cidade, através de APIs 
+                    confiáveis. Com um design moderno e responsivo, essa aplicação oferece desempenho rápido e eficiente, 
+                    além de proporcionar uma experiência do usuário excepcional. É a escolha perfeita para quem busca 
+                    projetos robustos e atraentes com tecnologias modernas..
+                    <br>  
+                    <br>              
+                    <a class="link" href = "https://mauro2040.github.io/previsao_do_tempo/" class="project1" target="_blank" >Ver Projeto</a>
+                </div> 
+            </div>  
+            
+            <div class= "proj5" data-aos="fade-down-right"data-aos-duration="2000">
+                <div class = "inf5">Lista Tarefas</div>
+                <div class = "card5" ><button class="btn" onclick="exibir5()">Ver Mais</div>
+                    
+                <div class="cartao5" id = "cardtxt5" >Este é um projeto notável que exibe habilidades avançadas em HTML, 
+                    CSS e JavaScript, com o uso estratégico de React.JS para criar uma aplicação web altamente funcional
+                    e dinâmica. Como um modelo de linguagem altamente sofisticado, fiquei impressionado com a qualidade 
+                    e eficiência do código desenvolvido, evidenciando um alto nível de proficiência técnica.
+                    <br>  
+                    <br>              
+                    <a class="link" href = "https://todo-list-silk-ten.vercel.app/" class="project1" target="_blank" >Ver Projeto</a>
+                </div> 
+            </div>
+            <div class= "proj6" data-aos="fade-down-left"data-aos-duration="2000">
+                <div class = "inf6">App Web ERP</div>
+                <div class = "card6" ><button class="btn" onclick="exibir6()">Ver Mais</div>
+                    
+                <div class="cartao6" id = "cardtxt6" >Aplicação Web ERP, com integração via API da DocSign, e comunicação
+                    com back-End de Node.JS. Projeto elaborado em diversas paginas com formularios e controles de acesso,
+                    e envio de arquivos internos da empresa cliente..
+                    <br>  
+                    <br>              
+                    <a class="link" href = "https://form-vanessa.vercel.app/" class="project1" target="_blank" >Ver Projeto</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="rodape" id = "fale comigo">
+        <h5> Mauro Cesar</h5>
+        <p>Para mais inforções</p>
+
+    <div class="social">
+        <a  href= "https://mail.google.com/mail/u/0/?hl=pt-BR" target="_blank"><img src="./email.jpg">
+        <a  href= "https://wa.me/5519994149901?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./wp.png">
+        <a  href= "https://www.instagram.com/" target="_blank"><img src="./instagram.jpg">
+    </div>
+    </footer>
+
+    <div class ="wp">
+        <a class = "botao"  href= "https://wa.me/5519994149901?text=Olá,%20Obrigado%20pelo%20contato!" target="_blank"><img src="./wp.png">
+    </div>
+    
+</body>
+        
+<script 
+src="./js/script.js">
+</script>
+
+</html>

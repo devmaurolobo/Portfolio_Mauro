@@ -1,0 +1,619 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sem serifa;
+}    
+
+.body{
+    width: 100vw;
+}
+
+.superior {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #262626;
+    position: fixed;
+    opacity: 0.9; /* Use um valor de opacidade entre 0 e 1 */
+    z-index: 999;
+}
+
+#color-light{
+    color: rgb(231, 228, 12);
+    font-size: 40px;
+    
+}
+
+#color-light.dark-mode{
+    display: none;
+}
+
+#color-black{
+    display: none;
+}
+
+#color-black.dark-mode{
+    display: flex;
+    font-size: 40px;
+}
+
+.portfolio {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 17%;
+}
+
+.portfolio spam {
+    color: red;
+    font-size: 50px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;    
+
+
+}
+
+.link-menu {
+    display: flex;
+    color: white;
+    list-style: none;
+    background-color: #262626;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 150px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px;
+}
+
+#menu-list {
+    display: flex;
+    width: 300px;
+    list-style: none;
+    align-items: flex-end;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+.link-menu:hover{
+    color: red;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+#menu-icon{
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 30px; 
+}
+
+#menu-icon.dark-mode{
+    color: black;
+}
+
+.caixa-principal {
+    display: flex;
+    height: 100vh;                                                                           
+    background: url(./fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.nome {
+    display: flex;
+    position: left;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    font-size: 30px;
+    color: white;
+
+}
+.nome h1 spam {
+    color: red;
+    
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid white;
+    width: 25%;
+}
+
+.foto.dark-mode  {
+    color: black;
+    border: 2px solid black;
+}
+.foto:hover {
+    transform: scale(1.1,1.1);
+    transition: 3s;
+}
+    
+.sobre-mim {
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border-radius: 40px;
+    border: 2px solid rgb(187, 174, 174);
+    padding: 10px;
+    transform-origin: center;
+    margin-right: 100px;
+}
+
+.sobre-mim.dark-mode  {
+    background-color:#f5f8f8;
+    color: black;
+    border: 2px solid black;
+}
+
+.skill{
+    display: flex;
+
+}
+
+.sobre-mim:hover {
+    transform: scale(1.2);
+    transition: 2s;
+    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
+}
+
+#acordion-header {
+    display: flex;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    font-size: 100%;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#acordion-header.dark-mode {
+    background-color:#f5f8f8;
+    color: black;
+}
+
+#acordion-header:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.acorde {
+    color:white;
+    font-size: 20px;
+    overflow: hidden;
+    max-width: 0;
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    transition: max-width  4s ease-out,opacity 4s ease-out;
+    transition: max-height 4s ease-out, opacity 4s ease-out;
+
+}
+
+.visible {
+    max-width: 600px;
+    max-height: 40%;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.acorde.dark-mode {
+    background-color: #f5f8f8;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+}
+.baixar {
+    display: flex;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    font-size: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.baixar:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.contato {
+    display: flex;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    font-size: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato:hover {
+    background-color: transparent;
+    border: 2px solid red;
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15px;
+}
+.contato{
+    text-decoration: none;
+    text-align: justify;
+}
+
+.baixar{
+    text-decoration:white;
+    float: right;
+}
+
+footer{
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape.dark-mode  {
+    background:#f5f8f8;
+    color: black;
+}
+
+.rodape h5 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.rodape p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rodape.dark-mode h5 {
+    background:#f5f8f8;;
+    color: black;
+}
+
+.rodape.dark-mode p {
+    background:#f5f8f8;;
+    color: black;
+}
+
+.social img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.social a {
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.social{
+    display: flex;
+    gap: 18px
+    
+}
+
+
+
+.botao {
+    position: fixed;
+    bottom: 20px;
+    left: 95%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.botao img{
+    background-color: transparent;
+    width: 50px;
+    z-index: 1;
+}
+
+.wp img {
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.dark-mode {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    background: (rgb(235, 234, 234))
+}
+
+/*media query*/
+@media (max-width: 768px){
+
+.superior{
+    height: 50px;
+    width: 99vw;
+
+}
+
+
+.portfolio{
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+.portfolio spam {
+    color: red;
+    font-size: 20px;
+}
+
+#menu-icon{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 30px; 
+    z-index: 100;
+}
+
+.caixa-principal{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+
+}
+
+#menu-list {
+    display: none;
+    align-items: center;
+}
+
+.nome{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+}
+
+.nome img{
+    width: 25%;
+    height: 50%;
+
+}
+
+.nome h1{
+    font-size: 30px;
+}
+
+.estatico{
+    font-size: 20px;
+}
+
+.dinamico{
+    font-size: 30px;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+}
+
+.fundo {        
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+#acordion-header {
+    display: flex;
+    font-size: 14px;
+    width: 70%;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.sobre-mim{
+    align-items: center;
+    margin-right: 0px;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+.acorde {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.botao {
+    position: fixed;
+    bottom: 20px;
+    left: 260px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#menu-list {
+        display: flex;
+        position: relative;
+        transition: all 1s ease-in-out;
+        flex-direction: column;
+        top: 40px;  
+        align-items: right;    
+        text-align: center;
+        overflow: hidden; 
+}     
+        
+.link-menu{
+        display: flex;
+        font-size: 18px;
+}
+}       
+
+.botoes{
+    justify-content: space-between;
+}
+.contato{
+    margin-right: 10px;
+}
+
+.baixar{
+    margin-left: 10px;
+}
+
+.link-menu{
+    display: flex;
+    display: block;
+    flex-direction: column;
+    margin: 10px;
+    opacity: 90%;
+}
+
+.link-menu.dark-mode {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contato{
+    font-size: 15px;
+}
+
+
+
+.cargo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.estatico{
+    font-size: 30px;
+}
+
+.cargo .dinamico {
+    font-size: 30px;
+    height: 360px;
+    margin-left: 10px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dinamico li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: rgb(255, 102, 0);
+    font-weight: 700;
+    left:0;
+    top:0;
+    position: relative;
+    animation: slide 12s steps(6) infinite;
+}
+
+.dinamico li .dark-mode {
+    Color: rgb(255, 102, 0)
+}
+
+@keyframes slide {
+    100%{
+        top: -540px;
+    }    
+}
+
+.dinamico li span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-left: red 2px solid;
+    animation: typing 2s steps(12) infinite;
+    background: rgb(14, 14, 14);
+}
+
+.dinamico li span{
+    position: relative;
+}
+.dinamico li span.dark-mode::after {
+    background: rgb(255, 255, 255);
+    Color: rgb(255, 102, 0)
+}
+
+
+@keyframes typing {
+    100% {
+        left: 160%;
+        margin: 0 - 15px 0 15px;
+    
+}
+
+}
+
+
