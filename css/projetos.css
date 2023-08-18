@@ -446,7 +446,7 @@
 .card5 {
     display: flex;
     flex-direction: column-reverse;
-    background-image: url('./projetos/projeto5.jpg');
+    background-image: url('../projetos/projeto5.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
