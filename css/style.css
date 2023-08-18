@@ -46,7 +46,7 @@
     color: white;
     font-size: 50px;
     font-weight: 600;
-    margin-left: 17%;
+    margin-left: 30%;
 }
 
 .portfolio spam {
@@ -211,7 +211,6 @@
     max-width: 0;
     max-height: 0;
     opacity: 0;
-    padding: 0;
     border-radius: 20px 20px 20px 20px;
     transition: max-width  4s ease-out,opacity 4s ease-out;
     transition: max-height 4s ease-out, opacity 4s ease-out;
@@ -400,7 +399,7 @@ footer{
 
 .portfolio{
     font-size: 20px;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .portfolio spam {
@@ -507,7 +506,7 @@ footer{
     margin-top: 10px;
     width: 80%;
     
-
+}
 .botao {
     position: fixed;
     bottom: 20px;
@@ -566,7 +565,7 @@ footer{
 .contato{
     font-size: 15px;
 }
-}
+
 
 
 
