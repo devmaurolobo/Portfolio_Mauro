@@ -1,49 +1,52 @@
+.black_light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    
+}
 
-    .black_light{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        background-color: #123;
-    }
-    
-    .black_light.active{
-        background-color: rgb(206, 206, 206);
-    }
-    
-    .black_light_btn{
-        width: 50px;
-        height: 25px; 
-        border: 5px solid #fff;
-        border-radius: 60px;
-        position: relative;
-        cursor: pointer;
-    }
-    
-    .black_light_btn:after{
-        content: "";
-        position: absolute;
-        width: 22px;
-        height: 22px;
-        background: #fff;
-        border-radius: 50%;
-        top:5%;
-        left:2px;
-        transform: translateY(-50);
-    }
-    
-    .black_light_btn.active:after{
-        left:25px;
-    }
-    
-    #black{
-        position: relative;
-        top: 13%;
-        left: 15%;
-    }
-    
-    #sun{
-        position: relative;
-        top: 13%;
-        left: 28%;
-    }
+
+.black_light_btn{
+    width: 50px;
+    height: 25px; 
+    border: 3px solid #f7f7f7;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer; 
+}
+
+.black_light_btn.dark-mode{
+    border: 3px solid #070707;
+}
+
+.black_light_btn:after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50% ;
+    left:2px;
+    top: -0.5px;
+    transform: translateY(-40);
+}
+
+.black_light_btn.dark-mode:after{ 
+    left:22px;
+    background-color: #000000;
+
+}
+
+#black{
+    position: relative;
+    bottom: -5%;
+    left: 15%;
+}
+
+#sun{
+    position: relative;
+    bottom: -5%;
+    left: 20%;
+}
+

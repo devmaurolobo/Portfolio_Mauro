@@ -1,6 +1,9 @@
 .container {
-    position: relative;
+    position: relative;   
 }
+
+
+
 
 .stack {
 display:block;
@@ -12,6 +15,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 list-style: none;
+
+
+
 }
 
 .icon  {
@@ -23,11 +29,15 @@ transition: 1s;
 transform-origin: 140px;
 transform: rotate(0deg) translateX(110px);
 
+
+
 }
 
 .stack.active .icon{
 transform: rotate(calc(360deg / 8* var(--i))) translateX(0px);
-
+box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
+-webkit-box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
+-moz-box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
 }
 
 
@@ -49,6 +59,7 @@ border: 2px solid rgb(255, 255, 255);
 border-radius: 50%;
 transition: 2s;
 }
+
 
 .icon.dark-mode  {
     border: 2px solid black;
@@ -80,6 +91,10 @@ list-style: none;
 z-index: 100;
 top:100px;
 left: 70px;
+background-color:  rgb(245, 245, 245,);
+box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
+-webkit-box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
+-moz-box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
 }
 
 .stack.active .toggle {

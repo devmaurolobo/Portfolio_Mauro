@@ -57,8 +57,6 @@
 .menu{
     display: flex;
     align-items: center;    
-
-
 }
 
 .link-menu {
@@ -109,6 +107,13 @@
     align-items: center;
 }
 
+.caixa-principal.dark-mode {
+    display: flex;
+    height: 100vh;                                                                           
+    background: none;
+    background-color: rgb(245, 245, 245);
+}
+
 .nome {
     display: flex;
     position: left;
@@ -117,8 +122,13 @@
     width: 50%;
     font-size: 30px;
     color: white;
-
+    
 }
+
+.nome.dark-mode{
+    background-color: rgb(245, 245, 245);
+}
+
 .nome h1 spam {
     color: red;
     
@@ -131,11 +141,15 @@
     border-radius: 100px;
     border: 2px solid white;
     width: 25%;
+    box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
+-webkit-box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
+-moz-box-shadow: 71px 105px 86px 5px rgba(0,0,0,0.41);
 }
 
 .foto.dark-mode  {
     color: black;
     border: 2px solid black;
+    background-color: rgb(245, 245, 245);
 }
 .foto:hover {
     transform: scale(1.1,1.1);
@@ -147,28 +161,22 @@
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    border-radius: 40px;
-    border: 2px solid rgb(187, 174, 174);
-    padding: 10px;
+    border-radius: 20px 20px;
     transform-origin: center;
     margin-right: 100px;
+    
+    box-shadow: 71px 34px 86px 5px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 71px 34px 86px 5px rgba(0,0,0,0.41);
+    -moz-box-shadow: 71px 34px 86px 5px rgba(0,0,0,0.41);
 }
 
 .sobre-mim.dark-mode  {
-    background-color:#f5f8f8;
-    color: black;
-    border: 2px solid black;
+
+    opacity: 1;
 }
 
 .skill{
     display: flex;
-
-}
-
-.sobre-mim:hover {
-    transform: scale(1.2);
-    transition: 2s;
-    box-shadow: 40px 38px 28px -4px rgba(201, 106, 69, 0.904);
 }
 
 #acordion-header {
@@ -187,12 +195,10 @@
 }
 
 #acordion-header.dark-mode {
-    background-color:#f5f8f8;
     color: black;
 }
 
 #acordion-header:hover {
-    background-color: transparent;
     border: 2px solid red;
     transition: 2s;
     transform: scale(1.2);
@@ -205,7 +211,8 @@
     max-width: 0;
     max-height: 0;
     opacity: 0;
-    margin: 0;
+    padding: 0;
+    border-radius: 20px 20px 20px 20px;
     transition: max-width  4s ease-out,opacity 4s ease-out;
     transition: max-height 4s ease-out, opacity 4s ease-out;
 
@@ -215,12 +222,11 @@
     max-width: 600px;
     max-height: 40%;
     opacity: 1;
-    padding: 0;
+    padding: 5px;
     margin: 0;
 }
 
 .acorde.dark-mode {
-    background-color: #f5f8f8;
     color: black;
 }
 
@@ -308,12 +314,14 @@ footer{
     font-size: 25px;
     text-align: center;
     margin-bottom: 5px;
+    color: rgb(255, 255, 255);
 }
 
 .rodape p {
     font-size: 15px;
     text-align: center;
     margin-bottom: 15px;
+    color: rgb(255, 255, 255);
 }
 
 .rodape.dark-mode h5 {
@@ -429,6 +437,7 @@ footer{
     flex-direction: column-reverse;
     text-align: center;
     width: 100%;
+    
 }
 
 .nome img{
@@ -468,6 +477,11 @@ footer{
     width: 70%;
     margin-top: 10px;
     height: 30px;
+    
+}
+
+.foto{
+    box-shadow: none;
 }
 
 .sobre-mim{
@@ -478,18 +492,26 @@ footer{
     width: 90%;
 }
 
+.sobre-mim.dark-mode{
+    align-items: center;
+    margin-right: 0px;
+    padding: 0;
+    margin: 0;
+    width: 90%; 
+}
+
 .acorde {
     font-size: 12px;
     padding: 0;
     margin: 0;
     margin-top: 10px;
     width: 80%;
-}
+    
 
 .botao {
     position: fixed;
     bottom: 20px;
-    left: 260px;
+    left: 240px;
     background-color: transparent;
     z-index: 1;
 }
@@ -544,76 +566,8 @@ footer{
 .contato{
     font-size: 15px;
 }
-
-
-
-.cargo {
-    display: inline-flex;
-    align-items: center;
-}
-
-.estatico{
-    font-size: 30px;
-}
-
-.cargo .dinamico {
-    font-size: 30px;
-    height: 360px;
-    margin-left: 10px;
-    height: 90px;
-    line-height: 90px;
-    overflow: hidden;
-}
-
-.dinamico li {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    color: rgb(255, 102, 0);
-    font-weight: 700;
-    left:0;
-    top:0;
-    position: relative;
-    animation: slide 12s steps(6) infinite;
-}
-
-.dinamico li .dark-mode {
-    Color: rgb(255, 102, 0)
-}
-
-@keyframes slide {
-    100%{
-        top: -540px;
-    }    
-}
-
-.dinamico li span::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    border-left: red 2px solid;
-    animation: typing 2s steps(12) infinite;
-    background: rgb(14, 14, 14);
-}
-
-.dinamico li span{
-    position: relative;
-}
-.dinamico li span.dark-mode::after {
-    background: rgb(255, 255, 255);
-    Color: rgb(255, 102, 0)
 }
 
 
-@keyframes typing {
-    100% {
-        left: 160%;
-        margin: 0 - 15px 0 15px;
-    
-}
-
-}
 
 
